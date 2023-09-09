@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="../css/Visd_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Love story video</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="../picture/love2.jfif" alt="pic" width="100%">
+                    <img src="../picture/play.png" alt="play botton" class="play-btn"
+                        onclick="playVideo('media/video2.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../picture/nature2.webp" alt="pic2">
+                        <img src="../picture/play.png" alt="play botton" class="play-btn"
+                            onclick="playVideo('../media/video1')">
+                    </div>
+                    <p>A & S clip 1</p>
+                </div>
+
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../picture/love5.jpeg" alt="pic2">
+                        <img src="../picture/play.png" alt="play botton" class="play-btn"
+                            onclick="playVideo('../media/video2.mp4')">
+                    </div>
+                    <p>A & S clip 4</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../picture/bgmain.png" alt="pic2">
+                        <img src="../picture/play.png" alt="play botton" class="play-btn"
+                            onclick="playVideo('media/video3.mp4')">
+                    </div>
+                    <p>A & S clip 4</p>
+                </div>
+
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../picture/coouple5.webp" alt="pic2">
+                        <img src="../picture/play.png" alt="play botton" class="play-btn"
+                            onclick="playVideo('media/video4.mp4')">
+                    </div>
+                    <p>A & S clip 6</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../picture/bggoodlov.jfif" alt="pic2">
+                        <img src="../picture/play.png" alt="play botton" class="play-btn"
+                            onclick="playVideo('media/video5.mp4')">
+                    </div>
+                    <p>A & S clip 7</p>
+                </div>
+
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="../picture/bfkiss.jfif" alt="pic2">
+                        <img src="../picture/play.png" alt="play botton" class="play-btn"
+                            onclick="playVideo('media/video6.mp4')">
+                    </div>
+                    <p>A & S clip 8</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- main video -->
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="myVideo">
+            <source src="../media/video1.mp4" type="video/mp4">
+        </video>
+        <img src="../picture/close.png" alt="close btn" class="close-btn" onclick="stopVideo()">
+    </div>
+
+
+
+
+
+
+    <!-- Scripting is started -->
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo() {
+            videoPlayer.style.display = "none";
+
+        }
+
+        function playVideo(file) {
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+
+    </script>
+
+
+    <div>
+        <button><a href="./welcome.html"> Go To Home⁜ </a></button>
+    </div>
+
+</body>
+
+</html>
